@@ -85,6 +85,10 @@ function generatePlaylistLink(posts) {
             }
         }
 
+        if (id.length !== 11) {
+            return;
+        }
+
         if (id !== '') {
             if (index === 0) {
                 link += id + '?playlist=';
